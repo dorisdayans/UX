@@ -1,0 +1,145 @@
+/*========================================================
+                    NORMALIZACION BASICA
+ ======================================================== */
+
+ * {
+    box-sizing: border-box;
+ }
+
+ /*========================================================
+                    VARIABLES DE COLOR
+ ======================================================== */
+:root {
+    --color-base: #f7faf9;
+    --color-surface: #ffffff;
+
+    --color-green: #2f7d4a;
+    --color-green-dark: #1f5c35;
+
+    --color-orange: #f28c28;
+
+    --color-text: #1f2937;
+    --color-muted: #6b7280;
+
+    --color-border: #dfe7e2;
+}
+/* =====================================================
+        ESTILOS GENERALES DEL DOCUMENTO
+===================================================== */
+
+ body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-text);
+    background-color: var(--color-base);
+    line-height: 1.5;
+ }
+
+ /* =====================================================
+                    IMAGENES
+===================================================== */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ /* =====================================================
+                    HEADER
+===================================================== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header a{
+  color: var(--color-green-dark);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+header a:hover,
+header a:focus {
+    color: var(--color-orange);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible{
+    outline: 1.5px solid var(--color-text);
+    outline-offset: 3px;
+}
+
+ /* =====================================================
+                    MAIN
+===================================================== */
+main {
+    width: min(1200px, 92%);
+}
+
+ /* =====================================================
+                    HERO
+===================================================== */
+main > section:first-of-type {
+    padding: 3rem 0;
+}
+
+main > section:first-of-type h1 {
+    margin: 0 0 1rem;
+    font-size: clamp(2rem, 5vw, 4rem);
+    line-height: 1.05;
+    color: var(--color-green-dark);
+}
+
+main > section:first-of-type > p {
+    max-width: 650px;
+    color: var(--color-muted);
+    font-size: 1.1rem;
+}
+
+/* =====================================================
+   12. FORMULARIO DE BÚSQUEDA
+===================================================== */
+form {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr auto;
+    gap: 1rem;
+    align-items: end;
+    padding: 1.25rem;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+}
+
+/* =====================================================
+                GRUPOS DEL FORMULARIO
+===================================================== */
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+label {
+    font-weight: 700;
+    color: var(--color-green-dark);
+}
+
+.required-text {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--color-muted);
+}
