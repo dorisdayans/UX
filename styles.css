@@ -223,6 +223,52 @@ button:disabled {
     cursor: not-allowed;
 }
 
+/* =====================================================
+   18. ESPACIADO ENTRE SECCIONES
+===================================================== */
+
+main section {
+    margin-bottom: 4rem;
+}
+
+
+main section > h2 {
+    margin-bottom: 1.5rem;
+
+    color: var(--color-green-dark);
+
+    font-size: 2rem;
+}
+
+/* =====================================================
+   19. SECCIÓN DE CONFIANZA
+===================================================== */
+.trust-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+}
+
+.trust-section > h2 {
+    grid-column: 1 / -1;
+}
+
+.trust-section div {
+    padding: 1.5rem;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 14px;
+}
+
+.trust-section article h3 {
+    margin-top: 0;
+        color: var(--color-green-dark);
+}
+
+/* =====================================================
+   20. SECCIÓN DE PASEADORES
+===================================================== */
+
 
 
 
