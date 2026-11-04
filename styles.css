@@ -143,3 +143,94 @@ label {
     font-weight: 400;
     color: var(--color-muted);
 }
+
+/* =====================================================
+   14. LABEL
+===================================================== */
+label {
+    font-size: 700;
+    color: var(--color-green-dark);
+}
+
+.required-text {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--color-muted);
+}
+
+/* =====================================================
+   15. CONTROLES DEL FORMULARIO
+===================================================== */
+input,
+select,
+button {
+    min-height: 44px;
+    font: inherit;
+    border-radius: 8px;
+}
+
+
+input,
+select {
+    width: 100%;
+    padding: 0 0.75rem;
+    border: 1px solid #b8c7be;
+    background-color: #ffffff;
+    color: var(--color-text);
+}
+
+/* =====================================================
+   16. FOCO DE INPUT Y SELECT
+===================================================== */
+input,
+select {
+    width: 100%;
+    padding: 0 0.75rem;
+    border: 1px solid #b8c7be;
+    background-color: #ffffff;
+    color: var(--color-text);
+}
+
+input:focus,
+select:focus {
+    outline: 3px solid rgba(47, 125, 74, 0.22);
+    border-color: var(--color-green);
+}
+
+/* =====================================================
+   17. BOTÓN PRINCIPAL
+===================================================== */
+button {
+    padding: 0 1.4rem;
+    border: 0;
+    background-color: var(--color-orange);
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(0.95);
+}
+
+button:focus-visible {
+    outline: 3px solid var(--color-text);
+    outline-offset: 3px;
+}
+
+button:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
